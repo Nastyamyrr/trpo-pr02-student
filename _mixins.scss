@@ -1,0 +1,2 @@
+@mixin focus-ring { outline: 3px solid rgba(49,94,251,.25); outline-offset: 2px; }
+@mixin interactive { transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }

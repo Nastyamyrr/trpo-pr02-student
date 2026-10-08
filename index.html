@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Практическая работа 2 — Адаптивный каталог</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header"><div class="container site-header__inner"><a class="brand" href="#catalog">Практическая работа 2</a><span>ТРПО</span></div></header>
+<main class="container page">
+<section class="hero"><div><span class="badge">CSS + SCSS</span><h1>Адаптивный каталог учебных товаров</h1><p>Данные берутся из <code>catalog.csv</code>, оформление — из <code>theme.json</code>.</p></div><div class="hero__stats"><strong id="total-count">0</strong><span>товаров</span></div></section>
+<section class="catalog-layout" aria-label="Каталог">
+<aside class="filters card"><div class="card__header"><h2>Фильтры</h2><button class="link-button" id="reset-filters" type="button">Сбросить</button></div>
+<label class="field"><span>Поиск</span><input id="search" type="search" placeholder="Учебный товар 5"></label>
+<label class="field"><span>Категория</span><select id="category"><option value="all">Все категории</option></select></label>
+<label class="field"><span>Максимальная цена</span><input id="max-price" type="number" min="0" step="50" placeholder="1500"></label>
+<label class="field"><span>Сортировка</span><select id="sort"><option value="id">По номеру</option><option value="price-asc">Цена: по возрастанию</option><option value="price-desc">Цена: по убыванию</option><option value="rating-desc">Рейтинг: сначала высокий</option></select></label>
+<p class="filter-status" id="filter-status">Загрузка данных…</p></aside>
+<section class="catalog" id="catalog"><div class="section-heading"><div><span class="eyebrow">Dataset</span><h2>Каталог</h2></div><span class="result-count" id="result-count">0 результатов</span></div><div class="catalog-grid" id="catalog-grid"></div><div class="empty-state card" id="empty-state" hidden><h3>Ничего не найдено</h3><p>Измени фильтры или сбрось их.</p></div><div class="error-state card" id="error-state" hidden><h3>Не удалось загрузить данные</h3><p>Запусти проект через локальный сервер или GitHub Pages.</p></div></section>
+</section>
+<section class="info-grid"><article class="info-card card"><b>01</b><h2>SCSS</h2><p>Переменные, вложенность и миксины разделены по файлам.</p></article><article class="info-card card"><b>02</b><h2>Grid + Flexbox</h2><p>Каталог и служебные блоки перестраиваются адаптивно.</p></article><article class="info-card card"><b>03</b><h2>Проверка</h2><p>Есть пустое состояние и состояние ошибки загрузки dataset.</p></article></section>
+</main>
+<footer class="site-footer"><div class="container site-footer__inner"><span>Практическая работа №2</span><span>Технологии разработки программного обеспечения</span></div></footer>
+<script src="js/app.js"></script>
+</body></html>

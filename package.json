@@ -1,0 +1,11 @@
+{
+  "name": "trpo-pr02-student",
+  "private": true,
+  "scripts": {
+    "build": "sass scss/styles.scss css/styles.css --style=expanded",
+    "watch": "sass --watch scss/styles.scss:css/styles.css"
+  },
+  "devDependencies": {
+    "sass": "^1.80.0"
+  }
+}
